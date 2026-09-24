@@ -13,11 +13,11 @@
   &__title-description{
     font-size: var(--fontsize-title);
     color: var(--color-light);
+    margin-block: 1rem;
   }
   &__description{
     color: var(--color-light-alpha);
     font-size: var(--fontsize-corp);
-    margin-block-start: 1rem;
   }
   &__grid{
     display: grid;
