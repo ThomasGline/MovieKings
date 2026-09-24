@@ -293,7 +293,7 @@ nav, main, footer {
   width: 32px;
   height: 32px;
   flex: 0 0 32px;
-  background-image: url("../../dist/images/icon/icon_nav.svg");
+  background-image: url("../../docs/images/icon/icon_nav.svg");
   background-repeat: no-repeat;
   background-size: 168px 72px;
 }
@@ -483,7 +483,7 @@ nav, main, footer {
   grid-template-columns: minmax(14rem, 1fr) minmax(0, 2fr);
   gap: 3rem;
   align-items: end;
-  background-image: url("../../dist/images/elts/pattern-red.png");
+  background-image: url("../../docs/images/elts/pattern-red.png");
   background-repeat: repeat;
   overflow: visible;
 }
@@ -596,7 +596,7 @@ nav, main, footer {
   }
 }
 .categories {
-  background-image: url("../../dist/images/elts/pattern-dark.png");
+  background-image: url("../../docs/images/elts/pattern-dark.png");
   background-repeat: repeat;
 }
 .categories__header {
@@ -647,7 +647,7 @@ nav, main, footer {
   display: block;
   width: 24px;
   height: 24px;
-  background-image: url("/dist/images/elts/icon/category/dark.svg");
+  background-image: url("/docs/images/elts/icon/category/dark.svg");
   background-repeat: no-repeat;
   background-size: 354px 74px;
   background-position: var(--icon-x) -24px;

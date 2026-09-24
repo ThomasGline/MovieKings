@@ -1,5 +1,5 @@
 .categories{
-  background-image: url("../../dist/images/elts/pattern-dark.png");
+  background-image: url("../../docs/images/elts/pattern-dark.png");
   background-repeat: repeat;
   &__header{
     padding-block-start: 6rem;
@@ -49,7 +49,7 @@
     display: block;
     width: 24px;
     height: 24px;
-    background-image: url("/dist/images/elts/icon/category/dark.svg");
+    background-image: url("/docs/images/elts/icon/category/dark.svg");
     background-repeat: no-repeat;
     background-size: 354px 74px;
     background-position: var(--icon-x) -24px;
