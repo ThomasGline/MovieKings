@@ -1,0 +1,39 @@
+:root {
+  //color
+  --color-light: #fff;
+  --color-light-alpha: #c2c2c2;
+  --color-dark: #181818;
+  --color-dark-alpha: #353535;
+  --color-yellow: #FFB807;
+  --color-blue: #4DB2A1;
+  --color-red: #FC4F62;
+  --color-secondary: #E6FF03;
+
+  //--color-primary-base: 33, 78, 160;
+  //--color-primary: rgb(var(--color-primary-base));
+  //--color-primary-alpha: rgb(var(--color-primary-base), .5);
+  
+
+  //font
+  //--fontfamily-primary: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --fontfamily-primary: 'outfit-regular';
+  --fontfamily-title: 'outfit-title';
+  --fontfamily-subtitle: 'outfit-subtitle';
+  --fontsize-corp: 18px;
+  --fontsize-smallcorp: 18px;
+  --fontsize-title: 60px;
+  --fontsize-subtitle: 16px;
+
+  //border-radius
+  --border-radius-primary: 2rem;
+  --border-radius-secondary: .5rem;
+
+  //button
+  --button-padding-inline: 1.5rem;
+  --button-padding-block: .8rem;
+  --button-radius: 10rem;
+
+  //marge
+  --margin-link: 1.3rem;
+  --padding-nav: 2rem;
+}

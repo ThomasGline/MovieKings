@@ -1,0 +1,145 @@
+.categories{
+  background-image: url("../../dist/images/elts/pattern-dark.png");
+  background-repeat: repeat;
+  &__header{
+    padding-block-start: 6rem;
+    padding-inline: 4rem;
+  }
+  &__title{
+    color: #FC4F62;
+    text-transform: uppercase;
+    font-size: var(--fontsize-subtitle);
+  }
+  &__title-description{
+    font-size: var(--fontsize-title);
+    color: var(--color-light);
+  }
+  &__description{
+    color: var(--color-light-alpha);
+    font-size: var(--fontsize-corp);
+    margin-block-start: 1rem;
+  }
+  &__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding-inline: 4rem;
+    padding-block: 2rem;
+  }
+}
+
+.categories-card {
+  min-height: 330px;
+  padding: 2rem;
+  background: #191a1c;
+  border: 1px solid #293038;
+  color: #d2c7b7;
+  &__icon{
+    --icon-x: -24px;
+    display: grid;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 28px;
+    place-items: center;
+    border-radius: 50%;
+    background-color: #f78b93;
+  }
+  &__icon::before{
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("/dist/images/elts/icon/category/dark.svg");
+    background-repeat: no-repeat;
+    background-size: 354px 74px;
+    background-position: var(--icon-x) -24px;
+    transform: scale(1.5);
+  }
+  &__title{
+    margin-block-end: .5rem;
+    color: #f78b93;
+    font-size: 32px;
+    font-weight: 900;
+  }
+  &__description{
+    font-size: var(--fontsize-corp);
+    line-height: 1.7;
+  }
+  &__icon--action{
+    --icon-x: -24px;
+    background-color: #f78b93;
+  }
+  &__icon--comedie {
+    --icon-x: -64px;
+    background-color: #9ae2ba;
+  }
+  &__icon--drame {
+    --icon-x: -104px;
+    background-color: #df60aa;
+  }
+  &__icon--science-fiction {
+    --icon-x: -144px;
+    background-color: #45afe5;
+  }
+  &__icon--horreur {
+    --icon-x: -185px;
+    background-color: #58c7c0;
+  }
+  &__icon--animation {
+    --icon-x: -224px;
+    background-color: #f5a27c;
+  }
+  &__icon--classiques {
+    --icon-x: -264px;
+    background-color: #8fd3cc;
+  }
+  &__icon--cultes {
+    --icon-x: -304px;
+    background-color: #f6d66e;
+  }
+}
+
+.categories-card:has(.categories-card__icon--comedie) .categories-card__title {
+  color: #9ae2ba;
+}
+
+.categories-card:has(.categories-card__icon--drame) .categories-card__title {
+  color: #df60aa;
+}
+
+.categories-card:has(.categories-card__icon--science-fiction) .categories-card__title {
+  color: #45afe5;
+}
+
+.categories-card:has(.categories-card__icon--horreur) .categories-card__title {
+  color: #58c7c0;
+}
+
+.categories-card:has(.categories-card__icon--animation) .categories-card__title {
+  color: #f5a27c;
+}
+
+.categories-card:has(.categories-card__icon--classiques) .categories-card__title {
+  color: #8fd3cc;
+}
+
+.categories-card:has(.categories-card__icon--cultes) .categories-card__title {
+  color: #f6d66e;
+}
+
+@media (max-width: 1050px) {
+  .categories__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .categories__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .categories-card {
+    min-height: auto;
+  }
+}

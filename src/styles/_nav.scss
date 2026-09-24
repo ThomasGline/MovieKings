@@ -1,0 +1,62 @@
+.navbar{
+  font-family: "rubik";
+  padding-block: 2rem;
+  padding-inline: 8rem;
+  color: var(--color-dark);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__logo{
+    font-weight: 700;
+    letter-spacing: 5px;
+  }
+  &__menu{
+    display: flex;
+    gap: var(--padding-nav);
+  }
+  &__link{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  &__link::before{
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    flex: 0 0 32px;
+    background-image: url("../../dist/images/icon/icon_nav.svg");
+    background-repeat: no-repeat;
+    background-size: 168px 72px;
+  }
+    &__item:first-child .navbar__link {
+    border-block-end: 2px solid var(--color-yellow);
+    padding-block-end: 0.2rem;
+  }
+    &__item:nth-child(1) .navbar__link::before {
+    background-position: -20px -20px;
+  }
+  &__item:nth-child(2) .navbar__link::before {
+    background-position: -68px -20px;
+  }
+  &__item:nth-child(3) .navbar__link::before {
+    background-position: -116px -20px;
+  }
+  &__switch-lang{
+    display: flex;
+    gap: .5rem;
+  }
+  &__lang{
+    padding-block: .6rem;
+    padding-inline: 1rem;
+    border: 1px solid var(--color-dark);
+  }
+  &__lang:first-child {
+    background-color: var(--color-yellow);
+  }
+}
+.separation{
+  background-color: black;
+  padding-block: .5rem;
+  padding-inline: auto;
+}

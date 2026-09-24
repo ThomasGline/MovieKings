@@ -1,0 +1,57 @@
+.tuto{
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding: 4rem;
+  &__header{
+    margin: 0;
+    padding-block: 1rem;
+  }&__title{
+    color: #FC4F62;
+    text-transform: uppercase;
+    font-size: var(--fontsize-subtitle);
+    margin: 0;
+  }&__title-description{
+    font-size: var(--fontsize-title);
+    margin: 0;
+  }&__description{
+    color: var(--color-light-alpha);
+    margin: 0;
+    font-size: var(--fontsize-corp);
+  }
+}
+.step {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.step__one,
+.step__two,
+.step__three {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  align-items: center;
+  border-block: 1px dashed var(--color-dark-alpha);
+  margin-block: 1rem;
+  padding-block: 1.5rem;
+}
+
+.step__number {
+  grid-column: 1;
+  font-size: var(--fontsize-title);
+  font-weight: 700;
+  color: var(--color-red);
+  font-family: barrio;
+}
+
+.step__title {
+  grid-column: 2;
+  margin: 0;
+}
+
+.step__description {
+  grid-column: 1 / -1;
+  margin: 1rem 0 0;
+  color: var(--color-light-alpha);
+}

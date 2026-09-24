@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.min.css">
+  <title>Movie Kings</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <a href="#" class="navbar__logo"><img src="./images/LOGO-FULL.svg" alt="Logo Movie Kings"></a>
+
+    <ul class="navbar__menu">
+      <li class="navbar__item"><a href="#" class="navbar__link">Accueil</a></li>
+      <li class="navbar__item"><a href="#" class="navbar__link">Jouer</a></li>
+      <li class="navbar__item"><a href="#" class="navbar__link">Classement</a></li>
+    </ul>
+
+    <ul class="navbar__switch-lang">
+      <li class="navbar__lang"><a href="#" class="navbar__FR">FR</a></li>
+      <li class="navbar__lang"><a href="#" class="navbar__EN">EN</a></li>
+      <li class="navbar__lang"><a href="#" class="navbar__DE">DE</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="separation"></div>
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero__background"></div>
+
+      <div class="hero__left">
+        <h1 class="hero__title">Deviens le Roi<br>de la réplique !</h1>
+        <p class="hero__paragraphe">
+          Reconnais la réplique et choisis le bon film.<br>Grimpe au classement et tente de gagner des places
+        </p>
+        <a href="#" class="hero__btn">Jouer maintenant</a>
+      </div>
+      <div class="hero__right">
+        <img src="../dist/images/elts/hero-ghoster.png" alt="Chaise Movie Kings" class="hero__img">
+      </div>
+    </section>
+
+
+    <!-- Tutoriel -->
+    <section class="tuto">
+      <header class="tuto__header">
+        <h2 class="tuto__title">Phase de jeu</h2>
+        <h3 class="tuto__title-description">Comment jouer ?</h3>
+        <p class="tuto__description">Chaque semaine, les meilleurs joueurs sont couronnés et remportent des récompenses.</p>
+      </header>
+
+      <div class="step">
+        <div class="step__one">
+          <span class="step__number">1</span>
+          <h2 class="step__title">Lis la réplique</h2>
+          <p class="step__description">Toujours culte, en VO ou en VF, selon la catégorie que tu as choisie.</p>
+        </div>
+        <div class="step__two">
+          <span class="step__number">2</span>
+          <h2 class="step__title">Devine le film</h2>
+          <p class="step__description">Dévoile les propositions ou devine directement pour plus de points !</p>
+        </div>
+        <div class="step__three">
+          <span class="step__number">3</span>
+          <h2 class="step__title">Gagne des points</h2>
+          <p class="step__description">Décroche la couronne et tente de gagner des places de cinéma.</p>
+        </div>
+      </div>
+    </section>
+
+
+  <!-- Cultissime -->
+    <section class="cultissime">
+
+      <!-- Cultissime gauche-->
+      <div class="cultissime__left">
+        <img src="/dist/images/elts/king-crown.png" alt="Couronne" class="cultissime__crown">
+        <img src="/dist/images/elts/ghoster-blue-happy.svg" alt="Mascotte Movie Kings" class="cultissime__ghost">
+      </div>
+
+      <!-- Cultissime droite-->
+      <div class="cultissime__right">
+
+        <!-- Cultissime header-->
+        <header class="cultissime__header">
+          <h2 class="cultissime__title">Cultissime</h2>
+          <p class="cultissime__description">→ citation du jour à retrouver. Teste-toi !</p>
+        </header>
+
+        <!-- Cultissime jeu-->
+        <div class="cultissime__game">
+          <blockquote class="cultissime__citation">« Il nous faudrait un plus gros bateau.»</blockquote>
+
+          <div class="cultissime__details-grid">
+            <div class="cutlissime__details-left">
+              <p class="cultissime__consigne">La réponse est cachée pour ne pas gâcher le plaisir. Tu ne trouves pas?</p>
+              <a href="" class="cultissime__discover">Découvre la réponse →</a>
+            </div>
+            <div class="cultissime__details-right">
+              <a href="" class="cultissime__btn">Révéler la réponse</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Catégories -->
+    <section class="categories">
+      <header class="categories__header">
+        <h2 class="categories__title">Catégories</h2>
+        <h3 class="categories__title-description">Explore les catégories</h3>
+        <p class="categories__description">Choisis l'univers qui te fait vibrer et découvre de nouvelles répliques à chaque session.</p>
+      </header>
+
+      <!-- Catégories card-->
+      <div class="categories__grid">
+
+        <div class="categories-card">
+          
+          <span class="categories-card__icon categories-card__icon--action" aria-hidden="true"></span>
+          
+          <h3 class="categories-card__title">Action</h3>
+          <p class="categories-card__description">Poursuites, héros et répliques
+            ou restent dans les annales au cinema a action.
+          </p>
+        </div>
+
+        <div class="categories-card">
+            <span class="categories-card__icon categories-card__icon--comedie" aria-hidden="true"></span>
+          
+          <h3 class="categories-card__title">Comédie</h3>
+          <p class="categories-card__description">Répliques cultes, personnages inoubliables et humour qui font encore rire aujourd'hui.
+          </p>
+        </div>
+
+        <div class="categories-card">
+            <span class="categories-card__icon categories-card__icon--drame" aria-hidden="true"></span>
+          
+          <h3 class="categories-card__title">Drame</h3>
+          <p class="categories-card__description">Moments forts, personnages complexes et dialogues qui restent en mémoire.
+          </p>
+        </div>
+
+        <div class="categories-card">
+            <span class="categories-card__icon categories-card__icon--science-fiction" aria-hidden="true"></span>
+          
+          <h3 class="categories-card__title">Science-fiction</h3>
+          <p class="categories-card__description">Mondes futurs, héros légendaires et répliques interstellaires.
+          </p>
+        </div>
+
+        <div class="categories-card">
+            <span class="categories-card__icon categories-card__icon--horreur" aria-hidden="true"></span>
+          
+          <h3 class="categories-card__title">Horreur</h3>
+          <p class="categories-card__description">Répliques glaçantes, suspense et frissons garantis.
+          </p>
+        </div>
+
+        <div class="categories-card">
+            <span class="categories-card__icon categories-card__icon--animation" aria-hidden="true"></span>
+          
+          <h3 class="categories-card__title">Animation</h3>
+          <p class="categories-card__description">Répliques inoubliables des films d'animation qui font sourire petits et grands.
+          </p>
+        </div>
+
+        <div class="categories-card">
+            <span class="categories-card__icon categories-card__icon--classiques" aria-hidden="true"></span>
+          
+          <h3 class="categories-card__title">Classiques</h3>
+          <p class="categories-card__description">Répliques emblématiques des films qui ont marqué l'histoire du cinéma.
+          </p>
+        </div>
+
+        <div class="categories-card">
+            <span class="categories-card__icon categories-card__icon--cultes" aria-hidden="true"></span>
+          
+          <h3 class="categories-card__title">Cultes</h3>
+          <p class="categories-card__description">Ces répliques que tout le monde connaît, même sans avoir vu le film.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <p class="footer__copyright">
+      © 2026 Movie Kings.
+    </p>
+
+    <nav class="footer__rs">
+      <a href="#" class="footer__link">Instagram</a>
+      <a href="#" class="footer__link">Tiktok</a>
+      <a href="#" class="footer__link">Youtube</a>
+      <a href="#" class="footer__link">Discord</a>
+    </nav>
+  </footer>
+
+</body>
+</html>

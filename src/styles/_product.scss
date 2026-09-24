@@ -1,0 +1,101 @@
+.products{
+  container-name: allproducts;
+  container-type: inline-size;
+  container: allproducts/inline-size;
+  &__header{
+    margin-block-start: 5vw;
+  }
+  &__title{
+    margin: 0;
+    font-size: clamp(1.5rem, 6vw, 3rem);
+    font-family: var(--fontfamily-title);
+    hyphens: manual;
+    text-transform: uppercase;
+    display: grid;
+    color: var(--color-light);
+  }
+  &__description{
+    margin: 0;
+    font-family: var(--fontfamily-primary);
+    color: var(--color-light-alpha);
+    font-size: clamp(1rem, 3vw, 1rem);
+    text-transform: uppercase;
+  }
+  &__grid {
+    display: grid;
+    padding: 1rem;
+  }
+  @container allproducts (min-width: 40rem) {
+    &__grid {
+      grid-template-columns: repeat(2, 1fr);
+      .product-card__image{
+        transform: translateX(-3vw) rotate(-35deg);
+      }
+    }
+  }
+  @container allproducts (min-width: 60rem) {
+    &__grid {
+      grid-template-columns: repeat(3, 1fr);
+      .product-card__image{
+        transform: translateX(-2vw) rotate(-35deg);
+      }
+    }
+  }
+}
+.product-card {
+  color: var(--color-light);
+  padding-block: 1rem;
+  padding-inline: 1px;
+  //margin: 1rem;
+  background-color: var(--color-dark);
+
+  &__image {
+    transform: translateX(-5vw) rotate(-35deg);
+  }
+  &__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  &__title{
+    font-family: var(--fontfamily-subtitle);
+    font-size: 24px;
+    inline-size: 100%;
+    margin: var(--margin-link);
+    text-transform: uppercase;
+  }
+  &__category{
+    font-family: var(--fontfamily-primary);
+    text-transform: uppercase;
+    grid-column: 1/-1;
+    margin: var(--margin-link);
+  }
+  &__price{
+    font-family: var(--fontfamily-subtitle);
+    font-size: 24px;
+    grid-area: 1/2/2/-1;
+    justify-self: end;
+    margin-inline-end: 1rem;
+    margin: var(--margin-link);
+    color: var(--color-secondary);
+  }
+  &__link{
+    background: black;
+    border: 1px solid var(--color-light-alpha);
+    color: var(--color-light);
+    text-decoration: none;
+    grid-column: 1/-1;
+    display: grid;
+    justify-content: center;
+    margin: var(--margin-link);
+    padding: var(--margin-link);
+    text-transform: uppercase;
+  }
+}
+picture{
+  display: block;
+  aspect-ratio: 1;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  background: #F5F5F5;
+}
