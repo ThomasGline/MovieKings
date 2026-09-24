@@ -2,14 +2,14 @@
   background-color: var(--color-dark);
   color: var(--color-light);
   padding: 4rem;
-  &__header{
-    padding-block: 1rem;
-  }&__title{
+  &__title{
     color: #FC4F62;
     text-transform: uppercase;
     font-size: var(--fontsize-subtitle);
   }&__title-description{
     font-size: var(--fontsize-title);
+    line-height: 3rem;
+    margin-block: 1rem;
   }&__description{
     color: var(--color-light-alpha);
     font-size: var(--fontsize-corp);
@@ -57,7 +57,6 @@
     gap: 0;
     margin-top: 2rem;
   }
-
   .step__one,
   .step__two,
   .step__three {
@@ -66,13 +65,9 @@
     column-gap: 0.75rem;
     align-items: center;
     padding: 1.25rem 0 1.5rem;
-    border-top: 1px dotted #777;
   }
-
   .step__three {
-    border-bottom: 1px dotted #777;
   }
-
   .step__number {
     grid-column: 1;
     color: #ff4d67;
@@ -83,7 +78,6 @@
 
   .step__title {
     grid-column: 2;
-    margin: 0;
     color: #f6e6cf;
     font-size: 1.5rem;
     line-height: 1.1;
