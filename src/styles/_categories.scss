@@ -1,25 +1,27 @@
 .categories{
   background-image: url("../images/elts/pattern-dark.png");
-  background-repeat: repeat;
-  &__header{
+  background-size: 150px auto;
+  background-position: center;
+
+  &__header {
     padding-block-start: 6rem;
     padding-inline: 4rem;
   }
-  &__title{
+  &__title {
     color: #FC4F62;
     text-transform: uppercase;
     font-size: var(--fontsize-subtitle);
   }
-  &__title-description{
+  &__title-description {
+    margin-block: 1rem;
     font-size: var(--fontsize-title);
     color: var(--color-light);
-    margin-block: 1rem;
   }
-  &__description{
+  &__description {
     color: var(--color-light-alpha);
     font-size: var(--fontsize-corp);
   }
-  &__grid{
+  &__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -34,7 +36,7 @@
   background: #191a1c;
   border: 1px solid #293038;
   color: #d2c7b7;
-  &__icon{
+  &__icon {
     --icon-x: -24px;
     display: grid;
     width: 5rem;
@@ -44,7 +46,7 @@
     border-radius: 50%;
     background-color: #f78b93;
   }
-  &__icon::before{
+  &__icon::before {
     content: "";
     display: block;
     width: 1.5rem;
@@ -54,17 +56,17 @@
     background-position: var(--icon-x) -1.5rem;
     transform: scale(1.5);
   }
-  &__title{
+  &__title {
     margin-block-end: .5rem;
     color: #f78b93;
     font-size: var(--fontsize-titlesecondary);
     font-weight: 900;
   }
-  &__description{
+  &__description {
     font-size: var(--fontsize-corp);
     line-height: 1.7;
   }
-  &__icon--action{
+  &__icon--action {
     --icon-x: -24px;
     background-color: #f78b93;
   }
@@ -147,9 +149,9 @@
     align-items: center;
     min-height: 8rem;
       &__icon {
+        align-self: start;
       width: 3rem;
       height: 3rem;
-      align-self: start;
     }
     &__icon::before {
       transform: scale(1.12);
@@ -157,9 +159,9 @@
     &__title {
       grid-column: 1;
       grid-row: 2;
+      margin-block-start: .5rem;
       font-size: 1.125rem;
       line-height: 1.15;
-      margin-block-start: .5rem;
     }
     &__description {
       grid-column: 2;

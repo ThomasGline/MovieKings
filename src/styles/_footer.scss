@@ -1,4 +1,4 @@
-.footer{
+.footer {
   background-color: var(--color-dark);
   color: var(--color-light);
   display: flex;
@@ -8,7 +8,7 @@
   &__copyright{
     margin: 0;
   }
-  &__rs{
+  &__rs {
     display: flex;
     inline-size: auto;
     margin-inline: 0;
@@ -16,7 +16,7 @@
     gap: 2rem;
     color: var(--color-light);
   }
-  &__link{
+  &__link {
     color: var(--color-light);
   }
 }

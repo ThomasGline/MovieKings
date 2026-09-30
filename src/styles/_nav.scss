@@ -1,25 +1,25 @@
-.navbar{
-  font-family: "rubik";
-  padding-block: 2rem;
-  padding-inline: 8rem;
-  color: var(--color-dark);
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  &__logo{
+  padding-block: 2rem;
+  padding-inline: 8rem;
+  font-family: "rubik", sans-serif;
+  color: var(--color-dark);
+  &__logo {
     font-weight: 700;
     letter-spacing: 5px;
   }
-  &__menu{
+  &__menu {
     display: flex;
     gap: var(--padding-nav);
   }
-  &__link{
+  &__link {
     display: flex;
     align-items: center;
     gap: 0.3rem;
   }
-  &__link::before{
+  &__link::before {
     content: "";
     display: block;
     width: 32px;
@@ -42,11 +42,11 @@
   &__item:nth-child(3) .navbar__link::before {
     background-position: -116px -20px;
   }
-  &__switch-lang{
+  &__switch-lang {
     display: flex;
     gap: .5rem;
   }
-  &__lang{
+  &__lang {
     padding-block: .6rem;
     padding-inline: 1rem;
     border: 1px solid var(--color-dark);
@@ -58,7 +58,7 @@
     display: none;
   }
 }
-.separation{
+.separation {
   background-color: black;
   padding-block: .5rem;
   padding-inline: auto;
@@ -77,7 +77,7 @@
     grid-template-columns: 1fr auto;
     align-items: center;
     padding: 1rem;
-  }
+  
   &__logo {
     grid-column: 1;
     grid-row: 1;
@@ -89,6 +89,7 @@
       width: 80px;
       height: auto;
     }
+  }
   // Checkbox invisible
   &__mobile {
     position: absolute;

@@ -1,7 +1,7 @@
 .tuto{
+  padding: 4rem;
   background-color: var(--color-dark);
   color: var(--color-light);
-  padding: 4rem;
   &__header{
     padding-block: 1rem;
   }&__title{
@@ -28,9 +28,9 @@
   grid-template-columns: auto 1fr;
   column-gap: 0.75rem;
   align-items: center;
-  border-block: 1px dashed var(--color-dark-alpha);
   margin-block: 1rem;
   padding-block: 1.5rem;
+  border-block: 1px dashed var(--color-dark-alpha);
 }
 
 .step__number {
@@ -38,7 +38,7 @@
   font-size: var(--fontsize-title);
   font-weight: 700;
   color: var(--color-red);
-  font-family: barrio;
+  font-family: barrio, sans-serif;
 }
 
 .step__title {

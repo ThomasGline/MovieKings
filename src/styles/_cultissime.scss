@@ -8,6 +8,8 @@
   align-items: end;
   background-image: url("../images/elts/pattern-red.png");
   background-repeat: repeat;
+  background-size: 150px auto;
+  background-position: center;
   overflow: visible;
   &__left {
     /* colonne gauche (mascotte + couronne) */
@@ -106,10 +108,89 @@
 /* mobile */
 @media (max-width: 768px) {
   .cultissime {
+    --overlap: 0;
+    display: grid;
     grid-template-columns: 1fr;
-  }
-
-  .cultissime__details-grid {
-    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "mascot"
+      "game";
+    gap: 0;
+    padding: 2rem 1rem 0;
+    overflow: visible;
+    &__right {
+      display: contents;
+      padding: 0;
+    }
+    &__header {
+      grid-area: header;
+      padding: 0;
+      text-align: center;
+    }
+    &__title {
+      padding-bottom: .25rem;
+      font-size: clamp(2.4rem, 10vw, 3rem);
+      line-height: .95;
+    }
+    &__description {
+      font-size: 1rem;
+      line-height: .9rem;
+    }
+    &__left {
+      grid-area: mascot;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-top: 5rem;
+      transform: none;
+      min-height: 12rem;
+      transform: translateY(4.5rem);
+    }
+    &__crown {
+      position: absolute;
+      z-index: 1;
+      top: -4rem;
+      inline-size: 7.5rem;
+    }
+    &__ghost {
+      inline-size: 12rem;
+      margin-top: 2.25rem;
+    }
+    &__game {
+      grid-area: game;
+      z-index: 2;
+      width: 100%;
+      max-width: none;
+      padding: 1.1rem 1.25rem;
+      gap: .8rem;
+      transform: translateY(4.5rem);
+    }
+    &__game::before {
+      display: none;
+    }
+    &__citation {
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+    &__details-grid {
+      grid-template-columns: 1fr;
+      gap: .6rem;
+    }
+    &__consigne {
+      padding-bottom: .25rem;
+      font-size: .72rem;
+      line-height: 1.35;
+    }
+    &__discover {
+      font-size: .72rem;
+    }
+    &__details-right {
+      text-align: center;
+    }
+    &__btn {
+      display: block;
+      padding: .65rem 1rem;
+      font-size: .72rem;
+    }
   }
 }
