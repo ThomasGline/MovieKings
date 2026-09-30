@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="./styles/styles.min.css">
   <title>Jouer</title>
 </head>
+
+
 <body>
   <!-- Navigation -->
   <nav class="navbar">
@@ -18,7 +20,7 @@
 
     <ul class="navbar__menu">
       <li class="navbar__item"><a href="index.html" class="navbar__link">Accueil</a></li>
-      <li class="navbar__item"><a href="jouer.html" class="navbar__link">Jouer</a></li>
+      <li class="navbar__item"><a href="jouer.html" class="navbar__link"><span class="focus">Jouer</span></a></li>
       <li class="navbar__item"><a href="#" class="navbar__link">Classement</a></li>
     </ul>
 
@@ -30,9 +32,73 @@
   </nav>
 
 
+
+
   <main>
-    
+    <section class="game">
+      <div class="game__config">
+        <div class="defi">
+          <h1 class="defi__title">Prêt à jouer ?</h1>
+          <p class="defi__desc">Choisis ton défi dans les catégories suivantes et prépare-toi à reconnaitre les répliques les plus cultes du cinéma.</p>
+          <p class="defi__choice">« Choisis une ou plusieurs catégories »</p>
+          <div class="defi__pin">
+            <span class="defi__pin-1"></span>
+            <span class="defi__pin-2"></span>
+            <span class="defi__pin-3"></span>
+            <span class="defi__pin-4"></span>
+            <span class="defi__pin-5"></span>
+            <span class="defi__pin-6"></span>
+            <span class="defi__pin-7"></span>
+            <span class="defi__pin-8"></span>
+            <span class="defi__pin-9"></span>
+            <span class="defi__pin-10"></span>
+          </div>
+        </div>
+        <div class="skin">
+          <h2 class="skin__title">Faison connaissance !</h2>
+          <div class="skin__color">
+            <p>couleur</p>
+            <span class="skin__color-red"></span>
+            <span class="skin__color-blue"></span>
+            <span class="skin__color-white"></span>
+          </div>
+          <div class="skin__character">
+            <div class="skin__character-main">
+              <img src="images/elts/diablotins/ghoster-red.svg" alt="character">
+            </div>
+            <div class="skin__character-humeur">
+
+            </div>
+          </div>
+          <div class="skin__name-input">
+            
+          </div>
+        </div>
+        <div class="settings">
+          <div class="settings__pins">
+            <span class="skin__color-red"></span>
+            <span class="skin__color-blue"></span>
+            <span class="skin__color-white"></span>
+          </div>
+          <div class="settings__input">
+            <label for="name">Quel est ton nom de joueur ?</label>
+            <input type="text" id="name" name="name" placeholder="Xx_Totodu6042_xX" required>
+          </div>
+        </div>
+      </div>
+      <div class="game__play">
+
+      </div>
+    </section>
+
+
+
+
+
   </main>
+
+
+
 
 
   <!-- Footer -->

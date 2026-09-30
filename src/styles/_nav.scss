@@ -1,3 +1,7 @@
+.focus{
+  border-block-end: 2px solid var(--color-yellow);
+  padding-block-end: 0.2rem;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,7 +34,6 @@
     background-size: 168px 72px;
   }
     &__item:first-child .navbar__link {
-    border-block-end: 2px solid var(--color-yellow);
     padding-block-end: 0.2rem;
   }
     &__item:nth-child(1) .navbar__link::before {
